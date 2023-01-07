@@ -98,6 +98,9 @@ fly launch (if it's the first time)
 fly deploy
 # Set your secrets from .env
 fly secrets set --app gpt3-chat TWILIO_ACCOUNT_SID= TWILIO_AUTH_TOKEN= TWILIO_PHONE_NUMBER= OPENAI_API_KEY=
+
+# Set IPv4 as dedicated IP
+fly ips allocate-v4
 ```
 
 ## GPT3 Example Integration
